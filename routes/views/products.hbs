@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>MySQL Database Integration and Select Data</h1>
+  <h2>{{title}}</h2>
+
+  <table class="table">
+    <tr>
+      <th>#ID</th>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>SKU</th>
+    </tr>
+    {{#each products}}
+      <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.sku}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
